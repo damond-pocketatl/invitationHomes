@@ -1,0 +1,1166 @@
+/*
+ *
+ * Plugin: attentionGrabber
+ *
+ * ADMIN INTERFACE CSS
+ *
+ * Author: MTD - http://themeforest.net/user/MTD
+ *
+ */
+
+
+#attentionGrabberAdmin{
+	width: 802px;
+	margin: 0 0 15px 5px;
+}
+
+#attentionGrabberAdmin_Content{
+	padding: 20px;
+	min-height: 600px;
+	background: #fff;
+	border: 1px solid #e4e3e3;
+}
+
+#attentionGrabberAdmin_SliderContainer{
+	overflow: hidden;
+	position: relative;
+}
+
+#attentionGrabberAdmin_Slider{
+	top: 0;
+	left: -760px;
+	width: 2280px;
+	position: relative;
+}
+
+#attentionGrabberAdmin_Slider .attentionGrabberAdmin_Slide{
+	float: left;
+	width: 760px;
+}
+
+
+
+
+
+/* ------ ----- ---- --- -- - ------ - -- --- ---- ----- ------ */
+/* ------ ----- ---- --- -- - HEADER - -- --- ---- ----- ------ */
+/* ------ ----- ---- --- -- - ------ - -- --- ---- ----- ------ */
+
+
+#attentionGrabberAdmin_Message{
+	height: 30px;
+	font: bold 14px/30px helvetica, arial, sans-serif;
+	color: #444;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+	text-align: center;
+	background: #fafafa;
+	border: 1px solid #e4e3e3;
+	border-bottom: 0;
+	border-top: 0;
+}
+
+.attentionGrabberAdmin_Header{
+	height: 50px;
+	padding: 0 0 0 20px;
+	background: url(../img/header-bg.jpg) #364048;
+	color: #fff;
+	text-shadow: 0 1px 0 #333;
+	-webkit-border-top-left-radius: 4px;
+	-webkit-border-top-right-radius: 4px;
+	-moz-border-radius-topleft: 4px;
+	-moz-border-radius-topright: 4px;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	overflow: hidden;
+}
+
+.attentionGrabberAdmin_Header .logo{
+	float: left;
+	width: 250px;
+	position: relative;
+}
+
+.attentionGrabberAdmin_Header .version{
+	position: absolute;
+	font: bold 12px/20px 'Myriad Pro', arial;
+	top: 3px;
+	left: 202px;
+}
+
+.attentionGrabberAdmin_Header #attentionGrabberAdmin_Notification{
+	display: none;
+	float: left;
+	font: normal 12px/50px arial, sans-serif;
+	color: #fefefe;
+}
+
+.attentionGrabberAdmin_Header #attentionGrabberAdmin_Notification a{
+	color: #efb811;
+	text-decoration: none;
+}
+
+.attentionGrabberAdmin_Header #attentionGrabberAdmin_Notification a:hover{
+	text-decoration: underline;
+}
+
+#attentionGrabberAdmin_Title{
+	height: 60px;
+}
+
+#attentionGrabberAdmin_Title h3{
+	float: left;
+	margin: 0;
+	font: bold 30px/1em arial, sans-serif;
+}
+
+#attentionGrabberAdmin_Title h3.settingsTitle{
+	display: none;
+}
+
+input#grabber_name_placeholder{
+	display: none;
+	float: left;
+	height: auto;
+	width: 500px;
+	padding: 3px 6px;
+	margin: 0;
+	font: bold 25px/28px arial, sans-serif;
+	color: #333;
+	border: 1px solid #d8d8d8;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-box-shadow: 0 1px 1px #eee, 0 1px 0 #fff inset;
+	-moz-box-shadow: 0 1px 1px #eee, 0 1px 0 #fff inset;
+	box-shadow: 0 1px 1px #eee, 0 1px 0 #ffff inset;
+}
+
+input#grabber_name_placeholder:focus{
+	background: #fefefe;
+	border-color: #c6c6c6;
+	-webkit-box-shadow: 0 0 2px #fff, 0 1px 2px #ddd inset;
+	-moz-box-shadow: 0 0 2px #fff, 0 1px 2px #ddd inset;
+	box-shadow: 0 0 2px #fff, 0 1px 2px #ddd inset;
+}
+
+input#grabber_name_placeholder.invalid{
+	border-color: #dc383b;
+}
+
+#attentionGrabberAdmin_LoaderBg{
+	float: right;
+	height: 24px;
+	width: 24px;
+	padding: 6px 6px 7px;
+	margin: 6px 8px 0 0;
+	background: url(../img/loader-bg.png) no-repeat 0 0;
+}
+
+#attentionGrabberAdmin_Loader{
+	float: right;
+	height: 24px;
+	width: 24px;
+	background: url(../img/loader.gif) no-repeat center;
+}
+
+#attentionGrabberAdmin_Back{
+	float: right;
+	width: 31px;
+	height: 26px;
+	padding: 0;
+	margin: 3px 20px 0 0;
+	background: url(../img/arrow.png) no-repeat 0 0;
+}
+
+#attentionGrabberAdmin_Back:hover{
+	background-position: 0 -26px;
+}
+
+#attentionGrabberAdmin_Back.right{
+	background-position: -31px 0;
+}
+
+#attentionGrabberAdmin_Back.right:hover{
+	background-position: -31px -26px;
+}
+
+#attentionGrabberAdmin_Title .actionButton{
+	float: right;
+	margin: 0;
+	text-decoration: none;
+	outline: none;
+	cursor: pointer;
+	font: bold 12px/1em HelveticaNeue, Arial, sans-serif;
+	padding: 8px 11px;
+	border-width: 1px;
+	border-style: solid;
+	color: #fff;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+
+/* ------ ----- ---- --- -- - CREATE NEW BUTTON - -- --- ---- ----- ------ */
+
+#attentionGrabberAdmin_CreateNew{
+	background: #ee8f1f;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f5b026), to(#f48423));
+	background: -moz-linear-gradient(top, #f5b026, #f48423);
+
+	border-color: #e6791c #e6791c #d86f15;
+
+	text-shadow: 0 1px 1px #b85300;
+	-webkit-box-shadow: 0 1px 2px #d7e9a4, inset 0 1px 0 #f8d898;
+	-moz-box-shadow: 0 1px 2px #d7e9a4, inset 0 1px 0 #f8d898;
+	box-shadow: 0 1px 2px #d7e9a4, inset 0 1px 0 #f8d898;
+}
+#attentionGrabberAdmin_CreateNew:hover{
+	background: #e38512;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ffbb33), to(#eb7b1a));
+	background: -moz-linear-gradient(top, #ffbb33, #eb7b1a);
+	border-color: #d0680c;
+	-webkit-box-shadow: 0 0 1px #d6d6d6, inset 0 1px 0 #ffdf9e;
+	-moz-box-shadow: 0 0 1px #d6d6d6, inset 0 1px 0 #ffdf9e;
+	box-shadow: 0 0 1px #d6d6d6, inset 0 1px 0 #ffdf9e;    
+}
+#attentionGrabberAdmin_CreateNew:active{
+	background: #ee8f1f;
+	border-color: #d0680c;
+	-webkit-box-shadow: 0 1px 0 #fff, inset 0 0 5px #d0680c;
+	-moz-box-shadow: 0 1px 0 #fff, inset 0 0 5px #d0680c;
+	box-shadow: 0 1px 0 #fff, inset 0 0 5px #d0680c;
+}
+
+
+/* ------ ----- ---- --- -- - SAVE CHANGES BUTTON - -- --- ---- ----- ------ */
+
+#attentionGrabberAdmin_Save{
+	display: none;
+	
+	background: #377ad0;
+	background: -webkit-gradient(linear, left top, left bottom, from(#52a8e8), to(#377ad0));
+	background: -moz-linear-gradient(top, #52a8e8, #377ad0);
+	border-color: #4081af #2e69a3 #20559a;
+	text-shadow: 0 1px 1px #4081af;
+	-webkit-box-shadow: 0 1px 2px #d6d6d6, inset 0 1px 1px #72b9eb;
+	-moz-box-shadow: 0 1px 2px #d6d6d6, inset 0 1px 1px #72b9eb;
+	box-shadow: 0 1px 2px #d6d6d6, inset 0 1px 1px #72b9eb;
+}
+#attentionGrabberAdmin_Save:hover{
+	background: #206bcb;
+	background: -webkit-gradient(linear, left top, left bottom, from(#3e9ee5), to(#206bcb));
+	background: -moz-linear-gradient(top, #3e9ee5, #206bcb);
+	border-color: #2a73a6 #165899 #07428f;
+	-webkit-box-shadow: 0 1px 0 0 #fff, inset 0 1px 0 0 #62b1e9;
+	-moz-box-shadow: 0 1px 0 0 #fff, inset 0 1px 0 0 #62b1e9;
+	box-shadow: 0 1px 0 0 #fff, inset 0 1px 0 0 #62b1e9;
+}
+#attentionGrabberAdmin_Save:active{
+	background: #3282d3;
+	border-color: #154c8c #154c8c #0e408e;
+	text-shadow: 0 -1px 1px #1d62ab;
+	-webkit-box-shadow: 0 1px 0 0 #fff, inset 0 0 6px 3px #1657b5;
+	-moz-box-shadow: 0 1px 0 0 #fff, inset 0 0 6px 3px #1657b5;
+	box-shadow: 0 1px 0 0 #fff, inset 0 0 6px 3px #1657b5;
+}
+
+
+/* ------ ----- ---- --- -- - VIEW SETTINGS BUTTON - -- --- ---- ----- ------ */
+
+#attentionGrabberAdmin_ViewSettings.actionButton{
+	margin: 0 20px 0 0;
+	color: #555;
+	text-shadow: 0 1px 0 #fff;
+	background: #f5f5f5;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(#f0f0f0));
+	background: -moz-linear-gradient(top, #f9f9f9, #f0f0f0);
+	border-color: #dedede #d8d8d8 #d3d3d3;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-shadow: 0 1px 2px #f6f6f6, inset 0 1px 0 #fbfbfb;
+	-moz-box-shadow: 0 1px 2px #f6f6f6, inset 0 1px 0 #fbfbfb;
+	box-shadow: 0 1px 2px #f6f6f6, inset 0 1px 0 #fbfbfb;
+}
+#attentionGrabberAdmin_ViewSettings:hover{
+	background: #efefef;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(#e9e9e9));
+	background: -moz-linear-gradient(top, #f9f9f9, #e9e9e9);
+	border-color: #ccc;
+	-webkit-box-shadow: 0 1px 1px #f6f6f6, inset 0 1px 0 #fbfbfb;
+	-moz-box-shadow: 0 1px 1px #f6f6f6, inset 0 1px 0 #fbfbfb;
+	box-shadow: 0 1px 1px #f6f6f6, inset 0 1px 0 #fbfbfb;
+}
+#attentionGrabberAdmin_ViewSettings:active{
+	background: #efefef;
+	background: -webkit-gradient(linear, left top, left bottom, from(#eaeaea), to(#f4f4f4));
+	background: -moz-linear-gradient(top, #eaeaea, #f4f4f4);
+	border-color: #c6c6c6;
+	-webkit-box-shadow: 0 1px 0 #fff, inset 0 0 5px #ddd;
+	-moz-box-shadow: 0 1px 0 #fff, inset 0 0 5px #ddd;
+	box-shadow: 0 1px 0 #fff, inset 0 0 5px #ddd;
+}
+
+
+
+
+
+/* ------ ----- ---- --- -- - --------- - -- --- ---- ----- ------ */
+/* ------ ----- ---- --- -- - LIST VIEW - -- --- ---- ----- ------ */
+/* ------ ----- ---- --- -- - --------- - -- --- ---- ----- ------ */
+
+
+#attentionGrabberAdmin_List{
+	margin: 0;
+	border-top: 1px solid #dadada;
+}
+
+#attentionGrabberAdmin_List li{
+	height: 65px;
+	padding: 0 25px;
+	margin: 0;
+	border-bottom: 1px solid #dadada;
+}
+
+#attentionGrabberAdmin_List li:hover{
+	background: #f9f9f5;
+}
+
+#attentionGrabberAdmin_List li .name{
+	float: left;
+	height: 65px;
+	width: 450px;
+	font: bold 16px/65px arial;
+	color: #328ec3;
+	text-shadow: 0 1px 0 #fff;
+	cursor: pointer;
+}
+
+#attentionGrabberAdmin_List li .name:hover{
+	color: #1a80b4;
+}
+
+#attentionGrabberAdmin_List li .clickCount{
+	float: left;
+	height: 65px;
+	width: 129px;
+	font: normal 13px/65px arial;
+	color: #333;
+}
+
+#attentionGrabberAdmin_List li .switch{
+	float: left;
+	width: 76px;
+	height: 25px;
+	margin: 20px 9px 0 0;
+	position: relative;
+}
+
+#attentionGrabberAdmin_List li .switchBg{
+	display: block;
+	width: 74px;
+	height: 23px;
+	position: relative;
+	overflow: hidden;
+	background: url(../img/switch-bg.png) no-repeat 0 0;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.3), 0 1px 0 rgba(255,255,255,0.8);
+	-moz-box-shadow: inset 0 0 2px rgba(0,0,0,0.3), 0 1px 0 rgba(255,255,255,0.8);
+	box-shadow: inset 0 0 2px rgba(0,0,0,0.3), 0 1px 0 rgba(255,255,255,0.8);
+	cursor: pointer;
+}
+
+#attentionGrabberAdmin_List li .switch.active .switchBg{
+	background-position: -37px 0;
+}
+
+#attentionGrabberAdmin_List li .switchHandle{
+	display: block;
+	width: 38px;
+	height: 23px;
+	position: absolute;
+	top: -1px;
+	left: 36px;
+	z-index: 2;
+	background: url(../img/switch-handle.png) no-repeat center #fff;
+	border: 1px solid #a8bec6;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	cursor: pointer;
+}
+
+#attentionGrabberAdmin_List li .switch.active .switchHandle{
+	left: -1px;
+}
+
+#attentionGrabberAdmin_List li .switchHandle:hover{
+	border-color: #98afb7;
+}
+
+#attentionGrabberAdmin_List li .grabberData{
+	display: none;
+}
+
+#attentionGrabberAdmin_List li .delete{
+	float: left;
+	width: 17px;
+	height: 18px;
+	margin: 23px 0 23px 29px;
+	background: url(../img/delete.png) no-repeat 0 0;
+}
+
+#attentionGrabberAdmin_List li .delete:hover{
+	background-position: 0 -18px;
+	cursor: pointer;
+}
+
+#attentionGrabberAdmin_List li.noGrabbers{
+	font: bold 16px/65px arial;
+	color: #328EC3;
+    text-shadow: 0 1px 0 #FFFFFF;
+	text-align: center;
+	cursor: pointer;
+}
+
+#attentionGrabberAdmin_List li.noGrabbers.hidden{
+	display: none;
+}
+
+
+/* ------ ----- ---- --- -- - ----------- - -- --- ---- ----- ------ */
+/* ------ ----- ---- --- -- - EDITOR VIEW - -- --- ---- ----- ------ */
+/* ------ ----- ---- --- -- - ----------- - -- --- ---- ----- ------ */
+
+
+#grabberPreviewArea{
+	height: 90px;
+	margin: 30px 0;
+	background: #f7f7f7;
+	border: 1px solid #cbcbcb;
+	overflow: hidden;
+	position: relative;
+}
+
+#attentionGrabber{
+	width: 100%;
+	text-align: center;
+	border-style: solid;
+	border-width: 0;
+	position: absolute;
+}
+
+#attentionGrabber a{
+	text-decoration: none;
+}
+
+#attentionGrabber_LaunchPreview{
+	display: block;
+	margin: -30px 0 30px;
+	width: 100%;
+	height: 20px;
+	color: #3399CC;
+	text-decoration: none;
+	line-height: 20px;
+	text-align: center;
+}
+
+#attentionGrabber_LaunchPreview:hover{
+	color: #268;
+}
+
+#attentionGrabber_LaunchPreview.hidden{
+	display: none;
+}
+
+
+/* ------ ----- ---- --- -- - TABS - -- --- ---- ----- ------ */
+
+#attentionGrabberAdmin .tabContainer{
+	margin: 0;
+}
+
+#attentionGrabberAdmin .tabList{
+	margin: 0;
+	padding: 0;
+}
+
+#attentionGrabberAdmin .tabList li{
+	float: left;
+	height: 37px;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+#attentionGrabberAdmin .tabList.fourTabs li{
+	width: 190px;
+}
+
+#attentionGrabberAdmin .tabList.threeTabs li{
+	width: 253px;
+}
+
+#attentionGrabberAdmin .tabList.threeTabs li.last{
+	width: 254px;
+}
+
+#attentionGrabberAdmin .tabList.twoTabs li{
+	width: 380px;
+}
+
+#attentionGrabberAdmin .tabList li a{
+	display: block;
+	font: bold 15px/37px arial;
+	color: #333;
+	text-decoration: none;
+	text-shadow: 0 1px 0 #fff;
+	background: #f0f0f0;
+	border: 1px solid #dadada;
+	border-left: none;
+}
+
+#attentionGrabberAdmin .tabList li.first a{
+	border-left: 1px solid #dadada;
+	-webkit-border-top-left-radius: 3px;
+	-moz-border-radius-topleft: 3px;
+	border-top-left-radius: 3px;
+}
+
+#attentionGrabberAdmin .tabList li.last a{
+	-webkit-border-top-right-radius: 3px;
+	-moz-border-radius-topright: 3px;
+	border-top-right-radius: 3px;
+}
+
+#attentionGrabberAdmin .tabList li a:hover{
+	background: #f6f6f6;
+}
+
+#attentionGrabberAdmin .tabList li.selected a{
+	color: #3399cc;
+	background: #f9f9f9;
+	border-bottom:1px solid #f9f9f9;
+}
+
+#attentionGrabberAdmin .tabPanels{
+	padding: 25px 20px 20px;
+	margin: 0;
+	background: #f9f9f9;
+	border: 1px solid #dadada;
+	border-top: none;
+}
+
+#attentionGrabberAdmin .tabPanels#grabberContent{
+	height: 122px;
+}
+
+#attentionGrabberAdmin .tabPanels#grabberStyle{
+	height: 250px;
+}
+
+#attentionGrabberAdmin .tabPanels li{
+	display: none;
+	margin: 0;
+}
+
+#attentionGrabberAdmin .tabPanels li.selected{
+	display: block;
+}
+
+
+
+
+
+/* ------ ----- ---- --- -- - -------------- - -- --- ---- ----- ------ */
+/* ------ ----- ---- --- -- - CONTENT EDITOR - -- --- ---- ----- ------ */
+/* ------ ----- ---- --- -- - -------------- - -- --- ---- ----- ------ */
+
+
+#attentionGrabberAdmin .contentField .contentTwoColumn{
+	float: left;
+	width: 350px;
+	padding: 0 9px 0 0;
+	margin: 10px 0 0 0;
+}
+
+#attentionGrabberAdmin .contentField .contentTwoColumn.last{
+	padding: 0 0 0 9px;
+}
+
+#attentionGrabberAdmin .contentField .contentThreeColumn{
+	float: left;
+	width: 226px;
+	margin: 0 20px 0 0;
+}
+
+#attentionGrabberAdmin .contentField .contentThreeColumn.last{
+	margin: 0;
+}
+
+#attentionGrabberAdmin .contentField label{
+	padding: 0 0 0 5px;
+}
+
+#attentionGrabberAdmin .contentField .textField{
+	width: 718px;
+	height: 32px;
+	*height: 20px;
+}
+
+#attentionGrabberAdmin .contentField textarea.textField{
+	height: 105px;
+	*height: 95px;
+}
+
+#attentionGrabberAdmin .contentField .contentTwoColumn .textField{
+	width: 350px;
+}
+
+#attentionGrabberAdmin .contentField .contentThreeColumn .textField{
+	width: 226px;
+}
+
+
+
+
+
+/* ------ ----- ---- --- -- - ----------------- - -- --- ---- ----- ------ */
+/* ------ ----- ---- --- -- - APPEARANCE EDITOR - -- --- ---- ----- ------ */
+/* ------ ----- ---- --- -- - ----------------- - -- --- ---- ----- ------ */
+
+
+#attentionGrabberAdmin .customizationColumn{
+	float: left;
+	width: 340px;
+	padding: 0 19px 0 0;
+}
+
+#attentionGrabberAdmin .customizationColumn.last{
+	padding: 0 0 0 19px;
+}
+
+#attentionGrabberAdmin .customizationField{
+	height: 28px;
+	margin: 0 0 10px;
+}
+
+#attentionGrabberAdmin .customizationField label{
+	float: left;
+	width: 160px;
+	font: bold 13px/28px arial;
+	color: #333;
+}
+
+#attentionGrabberAdmin .customizationField .sizeHolder span.sizeValue{
+	float: left;
+	height: 28px;
+	width: 30px;
+	margin: 0 15px 0 0;
+	font: normal 12px/28px arial;
+	color: #333;
+}
+
+#attentionGrabberAdmin .customizationField .sizeHolder div.sizeSlider{
+	float: left;
+	height: 7px;
+	width: 135px;
+	margin: 11px 0 0 0;
+	background: url(../img/slider-bg.png) no-repeat 0 0;
+	position: relative;
+}
+
+#attentionGrabberAdmin .customizationField .sizeHolder div.sizeSlider a{
+	display: block;
+	height: 19px;
+	width: 19px;
+	margin: 0 0 0 -10px;
+	position: absolute;
+	top: -7px;
+	background: url(../img/slider-handle.png) no-repeat 0 0;
+}
+
+#attentionGrabberAdmin .customizationField input.sizeField{
+	display: none;
+}
+
+
+
+
+
+/* ------ ----- ---- --- -- - ------ - -- --- ---- ----- ------ */
+/* ------ ----- ---- --- -- - THEMES - -- --- ---- ----- ------ */
+/* ------ ----- ---- --- -- - ------ - -- --- ---- ----- ------ */
+
+
+#attentionGrabberAdmin #grabber_themesList{
+	margin: 0;
+	padding: 0;
+}
+
+#attentionGrabberAdmin #grabber_themesList li{
+	float: left;
+	display: block;
+	width: 350px;
+	margin: 0 18px 15px 0;
+	padding: 0;
+	cursor: pointer;
+}
+
+#attentionGrabberAdmin #grabber_themesList li.even{
+	margin: 0 0 15px 0;
+}
+
+#attentionGrabberAdmin #grabber_themesList li .themeBorder{
+	padding: 9px;
+	background: #fff;
+	border: 1px solid #d6d6d6;
+}
+
+#attentionGrabberAdmin #grabber_themesList li:hover .themeBorder{
+	background: #f6f6f6;
+}
+
+#attentionGrabberAdmin #grabber_themesList li.active .themeBorder{
+	background: #72c9f4;
+	border-color: #3399CC;
+}
+
+#attentionGrabberAdmin #grabber_themesList li .themeBorder .grabberThemeDemo{
+	height: 45px;
+	font-size: 15px;
+	line-height: 45px;
+	text-align: center;
+}
+
+#attentionGrabberAdmin #grabber_themesList li .themeBorder .grabberThemeDemo a{
+	text-decoration: none;
+}
+
+
+/* ------ ----- ---- --- -- - THEME #1 - -- --- ---- ----- ------ */
+
+#grabberTheme_1 .grabberThemeDemo{
+	color: #ffffff;
+	text-shadow: 0 1px 0 #986c00;
+	font-family: Lucida Grande, Lucida Sans Unicode, sans-serif;
+	background: #f38713;
+	border-bottom: 2px solid #7A4A17;
+}
+
+#grabberTheme_1 .grabberThemeDemo a{
+	color: #2B1B0A;
+	text-shadow: 0 1px 0 #f1ba4d;
+}
+
+#grabberTheme_1 .grabberThemeDemo a:hover{
+	color: #d10000;
+}
+
+
+/* ------ ----- ---- --- -- - THEME #2 - -- --- ---- ----- ------ */
+
+#grabberTheme_2 .grabberThemeDemo{
+	color: #3B3B36;
+	font-family: Futura, sans-serif;
+	background: #f1f1ea;
+	border-bottom: 3px solid #7d7d7a;
+}
+
+#grabberTheme_2 .grabberThemeDemo a{
+	color: #FF9900;
+}
+
+#grabberTheme_2 .grabberThemeDemo a:hover{
+	color: #ff8400;
+}
+
+
+/* ------ ----- ---- --- -- - THEME #3 - -- --- ---- ----- ------ */
+
+#grabberTheme_3 .grabberThemeDemo{
+	color: #fff;
+	text-shadow: 0 1px 0 #343F51;
+	font-family: georgia, serif;
+	font-size: 16px;
+	font-style: italic;
+	background: #485469;
+	border-bottom: 3px solid #343F51;
+}
+
+#grabberTheme_3 .grabberThemeDemo a{
+	color: #99CC33;
+	text-shadow: 0 1px 0 #343F51;
+}
+
+#grabberTheme_3 .grabberThemeDemo a:hover{
+	color: #ade63a;
+}
+
+
+/* ------ ----- ---- --- -- - THEME #4 - -- --- ---- ----- ------ */
+
+#grabberTheme_4 .grabberThemeDemo{
+	color: #444444;
+	text-shadow: 0 1px 0 #e4f7f7;
+	font-family: Trebuchet MS, sans-serif;
+	background: #d1e4e4;
+	border-bottom: 3px solid #444444;
+}
+
+#grabberTheme_4 .grabberThemeDemo a{
+	color: #4584A5;
+	text-shadow: 0 1px 0 #e4f7f7;
+}
+
+#grabberTheme_4 .grabberThemeDemo a:hover{
+	color: #276da3;
+}
+
+
+/* ------ ----- ---- --- -- - THEME #5 - -- --- ---- ----- ------ */
+
+#grabberTheme_5 .grabberThemeDemo{
+	color: #ffffff;
+	text-shadow: 0 1px 0 #ae001a;
+	font-family: Arial;
+	background: #dc383b;
+	border-bottom: 3px solid #5E4B79;
+}
+
+#grabberTheme_5 .grabberThemeDemo a{
+	color: #5A1214;
+	text-shadow: 0 1px 0 #ff4a65;
+}
+
+#grabberTheme_5 .grabberThemeDemo a:hover{
+	color: #911a1e;
+}
+
+
+/* ------ ----- ---- --- -- - THEME #6 - -- --- ---- ----- ------ */
+
+#grabberTheme_6 .grabberThemeDemo{
+	color: #38B438;
+	text-shadow: 0 1px 0 #f5f5f5;
+	font-family: Lucida Console, Monaco, monospace;
+	font-size: 12px;
+	background: #e2e2da;
+	border-bottom: 3px solid #2E992E;
+}
+
+#grabberTheme_6 .grabberThemeDemo a{
+	color: #373D36;
+	text-shadow: 0 1px 0 #f5f5f5;
+}
+
+#grabberTheme_6 .grabberThemeDemo a:hover{
+	color: #636e61;
+}
+
+
+
+
+
+/* ------ ----- ---- --- -- - ------------- - -- --- ---- ----- ------ */
+/* ------ ----- ---- --- -- - SETTINGS VIEW - -- --- ---- ----- ------ */
+/* ------ ----- ---- --- -- - ------------- - -- --- ---- ----- ------ */
+
+
+#grabber_core_settings{
+	display: none;
+}
+
+#attentionGrabberAdmin_Settings .settingsField{
+	padding: 5px 0;
+	border-top: 1px solid #F0F0F0;
+}
+
+#attentionGrabberAdmin_Settings .settingsField label{
+	float: left;
+	width: 200px;
+	height: 40px;
+	line-height: 40px;
+}
+
+#attentionGrabberAdmin_Settings .settingsField .selectHolder{
+	margin: 6px 0 0 0;
+}
+
+#attentionGrabberAdmin_Settings .settingsField .textField{
+	margin: 7px 0 0 0;
+}
+
+#attentionGrabberAdmin_Settings .settingsField .checkboxWrap{
+	margin: 10px 0 0 0;
+}
+
+#attentionGrabberAdmin_Settings .settingsField .colorInputHolder{
+	margin: 9px 0 0 0;
+}
+
+#attentionGrabberAdmin_Settings .settingsField .colorInputDetail{
+	line-height: 40px;
+}
+
+#attentionGrabberAdmin_Settings .settingsField #grabberSettings_resetAll{
+	line-height: 40px;
+	color: #D54E21;
+	text-decoration: none;
+}
+
+#attentionGrabberAdmin_Settings .settingsField #grabberSettings_resetAll:hover{
+	text-decoration: underline;
+}
+
+#attentionGrabberAdmin_Settings .settingsField .settingsDetail{
+	display: none;
+	float: right;
+	width: 350px;
+    padding: 0;    
+    font: 12px/40px arial;
+    color: #777; 
+}
+
+#attentionGrabberAdmin_Settings .settingsField .settingsDetail.twoLines{
+    padding: 3px 0 0 0;    
+    font: 12px/18px arial;   
+}
+
+#attentionGrabberAdmin_Settings .settingsField:hover .settingsDetail{
+	display: block;
+}
+
+
+
+
+/* ------ ----- ---- --- -- - ------ - -- --- ---- ----- ------ */
+/* ------ ----- ---- --- -- - COMMON - -- --- ---- ----- ------ */
+/* ------ ----- ---- --- -- - ------ - -- --- ---- ----- ------ */
+
+
+#attentionGrabberAdmin .clear{ clear: both; }
+
+#attentionGrabberAdmin.cf:before, #attentionGrabberAdmin .cf:after {
+    content:"";
+    display:table;
+}
+
+#attentionGrabberAdmin .cf:after {
+    clear:both;
+}
+
+#attentionGrabberAdmin .cf {
+    zoom:1;
+}
+
+
+/* ------ ----- ---- --- -- - TEXT FIELD - -- --- ---- ----- ------ */
+
+#attentionGrabberAdmin label{
+	display: block;
+	font: bold 13px/22px arial;
+	color: #333;
+}
+
+#attentionGrabberAdmin label .description{
+	float: right;
+	font: italic 12px/22px arial;
+	color: #777;
+}
+
+#attentionGrabberAdmin .textField{
+	padding: 4px 6px;
+	*padding: 4px;
+	font: normal 14px/20px arial;
+	color: #333;
+	background: #fdfdfd;
+	border: 1px solid #d8d8d8;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	-webkit-box-shadow: 0 1px 1px #eee, 0 1px 0 #fff inset;
+	-moz-box-shadow: 0 1px 1px #eee, 0 1px 0 #fff inset;
+	box-shadow: 0 1px 1px #eee, 0 1px 0 #ffff inset;
+}
+
+#attentionGrabberAdmin textarea.textField{
+	width: 718px;
+	*width: 710px;
+	height: 230px;
+	*height: 220px;
+}
+
+#attentionGrabberAdmin .textField:hover{
+	border-color: #c6c6c6;
+}
+
+#attentionGrabberAdmin .textField:focus{
+	background: #fefefe;
+	border-color: #c6c6c6;
+	-webkit-box-shadow: 0 0 2px #fff, 0 1px 2px #ddd inset;
+	-moz-box-shadow: 0 0 2px #fff, 0 1px 2px #ddd inset;
+	box-shadow: 0 0 2px #fff, 0 1px 2px #ddd inset;
+}
+
+
+/* ------ ----- ---- --- -- - SELECT - -- --- ---- ----- ------ */
+
+#attentionGrabberAdmin div.selectHolder{
+	float: left;
+	height: 30px;
+	width: 170px;
+	margin: -1px 0 0 0;
+	padding: 0 0 0 10px;
+	background: url(../img/select-bg.png) no-repeat 0 0;
+	position: relative;
+}
+
+#attentionGrabberAdmin div.selectHolder span{
+	float: left;
+	height: 30px;
+	width: 170px;
+	font: normal 12px/30px arial;
+	color: #333;
+	background: url(../img/select-bg.png) no-repeat bottom right;
+}
+
+#attentionGrabberAdmin div.selectHolder select{
+	height: 30px; 
+	width: 180px;
+	top: 0;
+	left: 0;
+	position: absolute;
+	cursor: pointer;
+}
+
+
+/* ------ ----- ---- --- -- - COLOR PICKER - -- --- ---- ----- ------ */
+
+#attentionGrabberAdmin span.colorInputHolder{
+	float: left;
+	width: 15px;
+	height: 15px;
+	padding: 3px;
+	margin: 3px 0 0 0;
+	background: url(../img/colorpicker_overlay.png) no-repeat;
+	position: relative;
+	overflow: hidden;
+}
+
+#attentionGrabberAdmin input.colorInput{
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	width: 15px;
+	height: 15px;
+	padding: 0;
+	margin: 0;
+	border: none;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	cursor: pointer;
+}
+
+#attentionGrabberAdmin span.colorInputDetail{
+	float: left;
+	height: 28px;
+	padding: 0 0 0 10px;
+	font: bold 11px/28px arial;
+	color: #333;
+}
+
+
+/* ------ ----- ---- --- -- - CHECKBOX - -- --- ---- ----- ------ */
+
+.checkboxWrap{
+	float: left;
+	height: 20px;
+}
+
+.checkboxWrap span{
+	float: left;
+	font: normal 12px/20px arial;
+	color: #333;
+}
+
+.checkboxHolder{
+	width: 31px;
+	height: 20px;
+	margin: 0 20px;
+	background: url(../img/checkbox-sprite.png) no-repeat -50px 0;
+	position: relative;
+	cursor: pointer;
+}
+
+.checkboxWrap.checked .checkboxHolder{
+	background-position: -19px 0;
+}
+
+.checkboxHolder .checkboxHandle{
+	width: 19px;
+	height: 19px;
+	top: 0;
+	left: -7px;
+	background: url(../img/checkbox-sprite.png) no-repeat 0 0;
+	position: absolute;
+}
+
+.checkboxWrap.checked .checkboxHandle{
+	left: 19px;
+}
+
+.checkboxWrap .labelUnChecked, .checkboxWrap.checked .labelChecked{
+	font-weight: bold;
+}
+
+.checkboxWrap.checked .labelUnChecked, .checkboxWrap .labelChecked{
+	font-weight: normal;
+}
+
+
+
+input:focus, input:active, textarea:focus{
+    outline: none;
+}
+
+input::-moz-focus-inner { 
+	border: 0;
+}
+
+textarea{
+    resize: none;
+    -moz-resize: none;
+    overflow: auto;
+}
+
+
+
+
+/* ------ ----- ---- --- -- - --------------- - -- --- ---- ----- ------ */
+/* ------ ----- ---- --- -- - CONTEXTUAL HELP - -- --- ---- ----- ------ */
+/* ------ ----- ---- --- -- - --------------- - -- --- ---- ----- ------ */
+
+
+.attentionGrabber_doc_column{
+	float: left;
+	width: 48%;
+	padding: 0 2% 0 0;
+}
+
+.attentionGrabber_doc_column.last{
+	padding: 0 0 0 2%;
+}
+
+#contextual-help-wrap ol li {
+    list-style-type: decimal;
+}
+
+.codeblock{
+	display: block;
+}
+

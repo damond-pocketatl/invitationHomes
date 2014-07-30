@@ -1,0 +1,70 @@
+/* FONT */
+
+body {
+	font-family:'Roboto Condensed',Arial,sans-serif;
+	}
+
+
+/* BACKGROUNDS AND COLORS */
+
+/* color of the border on the top of the page */
+body:after {
+	background-color:#008cff;
+	}
+
+/* background color of the current menu item */
+@media screen and (min-width: 820px) {
+	#nav #current, #nav a#current:after {
+	background-color:#008cff;
+	}
+}
+	
+/* background color of the headers in the slider */
+.rslides-content h2 {
+	background:#008cff;
+	}
+
+/* hover color for the slider navigation arrows */
+.next:hover, .prev:hover {
+	background-color:#008cff;
+	}
+	
+/* background color of the form buttons */
+button {
+	background-color:#008cff;
+	}
+
+/* background color of the features tags in the room pages */
+.features li {
+	background-color:#008cff;
+	}
+
+/* background colors for the search widget */
+.search, .search h3 span {
+	background-color:#008cff;
+	}
+
+/* background color for the active listing type */
+a.listing-active {
+	background-color:#008cff;
+	}
+
+/* background color for the price tags */
+[class^="char"] {
+	background-color:#008cff;
+	}
+
+/* border color for the links in the slider content */
+.rslides-content p a:hover {
+	border-color:#008cff;
+	}
+
+/* background color of the footer area */
+.footer {
+	background-color:#008cff;
+	}
+
+/* color for the links in the content */
+a {
+	color:#008cff;
+	}

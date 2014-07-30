@@ -1,0 +1,80 @@
+/* FONT */
+
+body {
+	font-family:'Roboto Condensed',Arial,sans-serif;
+	}
+
+
+/* BACKGROUNDS AND COLORS */
+
+/* color of the border on the top of the page */
+body:after {
+	background-color:#008cff;
+	}
+
+/* background color of the current menu item */
+/*
+@media screen and (min-width: 820px) {
+	#nav #current, #nav a#current:after {
+	background-color:#008cff;
+	}
+}
+*/
+	
+/* background color of the headers in the slider */
+.rslides-content h2 {
+	/* Fallback for web browsers that don't support RGBa */
+	    background-color: rgb(0, 0, 0);
+	    /* RGBa with 0.6 opacity */
+	    background-color: rgba(0, 0, 0, 0.4);
+	}
+
+/* hover color for the slider navigation arrows */
+.next:hover, .prev:hover,
+.play:hover, .paused:hover {
+	background-color:#008cff;
+	}
+	
+/* background color of the form buttons */
+button {
+	background-color:#008cff;
+	}
+
+/* background color of the features tags in the room pages */
+.features li {
+	background-color:#008cff;
+	}
+
+/* background colors for the search widget */
+.search, .search h3 span {
+	background-color:#008cff;
+	}
+
+/* background color for the active listing type */
+a.listing-active {
+	background-color:#008cff;
+	}
+
+/* background color for the price tags */
+[class^="char"] {
+	background-color:#008cff;
+	}
+
+/* border color for the links in the slider content */
+.rslides-content p a:hover {
+	border-color:#008cff;
+	}
+
+/* background color of the footer area */
+.footer {
+	background-color:#008cff;
+	}
+
+/* color for the links in the content */
+a {
+	color:#008cff;
+	}
+	
+/* bg double border for strong.phead */
+strong.phead { position: relative; display: block; width: 100%; font: normal 2.1em/1.2em 'Roboto Condensed',Arial,sans-serif; padding-bottom: 12px; margin-bottom: -10px; background: url(../img/phead_bg.gif) repeat-x bottom left; }
+

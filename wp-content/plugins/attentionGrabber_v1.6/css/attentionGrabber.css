@@ -1,0 +1,114 @@
+/* 
+ * Attention Grabber WP plugin - CSS
+ */
+
+#attentionGrabberWrap{
+    display: none;
+    margin: 0;
+    padding: 0;
+    z-index: 99999;
+    width: 100%;
+}
+
+#attentionGrabber{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: relative;
+    z-index: 3;
+}
+
+#attentionGrabber a{
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+}
+
+#attentionGrabberWrap #closeAttentionGrabber{
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 21px;
+    cursor: pointer;
+}
+
+#attentionGrabberWrap #closeAttentionGrabber:hover{
+    background-position: -21px 50%;
+}
+
+#attentionGrabberWrap.bottomPosition #closeAttentionGrabber{
+    background-position: right 50%;
+}
+
+#attentionGrabberWrap.bottomPosition #closeAttentionGrabber:hover{
+    background-position: -42px 50%;
+}
+
+#attentionGrabberWrap #openAttentionGrabber{
+    display: block;
+    position: absolute;
+    right: 15px;
+    padding: 0 7px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#attentionGrabberWrap #openAttentionGrabber span{
+    display: block;
+    width: 21px;
+    height: 34px;
+}
+
+#attentionGrabberWrap #openAttentionGrabber:hover span{
+    background-position: -42px 50%;
+}
+
+#attentionGrabberWrap.bottomPosition #openAttentionGrabber span{
+    background-position: left 50%;
+}
+
+#attentionGrabberWrap.bottomPosition #openAttentionGrabber:hover span{
+    background-position: -21px 50%;
+}
+
+/* - Fix positioning issues with admin bar - */
+
+#attentionGrabberWrap.admBar{
+    margin-top: 28px;
+}
+
+/* - Like Buttons - */
+
+#attentionGrabberWrap .facebookBtn,
+#attentionGrabberWrap .twitterBtn,
+#attentionGrabberWrap .plusoneBtn{
+    padding-left: 8px;
+}
+
+
+#attentionGrabberWrap .twitterBtn iframe,
+#attentionGrabberWrap .plusoneBtn iframe{
+    vertical-align: text-bottom;
+}
+
+#attentionGrabberWrap .plusoneBtn > div{
+    height: auto !important;
+}
+
+/* - -- --- Multiple Messages --- -- - */
+
+#attentionGrabberWrap .multiMessages{
+    position: relative;
+}
+
+#attentionGrabberWrap .multiMessages .singleMessage{
+    display: none;
+    position: relative;
+    z-index: 1;
+}
+
+#attentionGrabberWrap .multiMessages .singleMessage.current{
+    display: inline;
+    z-index: 2;
+}
